@@ -127,6 +127,13 @@ static unsigned int defaultcs = 15;
 static unsigned int defaultrcs = 257;
 
 /*
+ * Colors used, when the specific fg == defaultfg. So in reverse mode this
+ * will reverse too. Another logic would only make the simple feature too
+ * complex.
+ */
+unsigned int defaultitalic = 7;
+unsigned int defaultunderline = 7;
+/*
  * Default shape of cursor
  * 2: Block ("█")
  * 4: Underline ("_")
